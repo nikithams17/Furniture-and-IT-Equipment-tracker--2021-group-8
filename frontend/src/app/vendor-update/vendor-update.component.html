@@ -1,0 +1,45 @@
+<div class=container>
+    <div class="wrapper">
+        <a onclick="history.back(-1)" ><img src="assets/back.png" height="30" width="30" transform="rotate(90deg)" style="cursor: pointer; margin-top: -20px; padding-bottom: 10px;"></a>
+
+        <form >
+            <div class="form-group">
+                <label>Request ID </label>
+                <input type="text" class="form-control" id="employeeID" required [(ngModel)]="request.req_id"
+                    name="employeeID" disabled="disabled">
+            </div>
+            <div class="form-group">
+                <label>Employee ID</label>
+                <input type="text" class="form-control" id="requestID" required [(ngModel)]="request.emp_id"
+                    name="requestID" disabled="disabled">
+            </div>
+            <div class="form-group">
+                <label> Furniture </label>
+                <input type="text" class="form-control" id="furnitures" required [(ngModel)]="request.furniture"
+                    name="furnitures" disabled="disabled">
+            </div>
+
+            <div class="form-group">
+                <label> IT Equipment </label>
+                <input type="text" class="form-control" id="ITEquipment" required [(ngModel)]="request.it_equip"
+                    name="ITEquipment" disabled="disabled">
+            </div>
+
+            <div class="form-group">
+                <label>Delivery Date</label>
+                <input type="date" class="form-control" id="deliveryDate" [min]="cValue" max="2030-12-31" required
+                    [(ngModel)]="request.delivery_date" name="deliveryDate">
+            </div>
+            <div class="form-group">
+
+                <input type="hidden" class="form-control" id="email" required [(ngModel)]="request.email" name="email"
+                    disabled="disabled">
+            </div>
+
+            <br>
+            <div>
+                <button class="btn btn-success" type="submit" (click)="onSubmit(request.delivery_date)">Submit</button>  
+            </div>
+        </form>
+    </div>
+</div>

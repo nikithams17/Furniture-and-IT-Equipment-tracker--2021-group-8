@@ -1,0 +1,15 @@
+<div class="login-page">
+    <mat-card class="mat-elevation-z12">
+        <mat-card-title style="text-align:center; margin-top: 10px;margin-bottom: -20px;">Profile</mat-card-title>
+            <mat-tab-group mat-stretch-tabs class="example-stretched-tabs">
+                <mat-tab>
+                    <mat-card-content>
+                        <ul>Name: {{user.first_name}} {{user.last_name}}</ul>
+                        <ul>Employee ID: {{user.emp_id}}</ul>
+                        <ul>Email ID: {{user.email}}</ul>
+                        <ul>Username: {{user.username}}</ul>
+                    </mat-card-content>
+                </mat-tab>
+            </mat-tab-group>
+    </mat-card>
+</div>

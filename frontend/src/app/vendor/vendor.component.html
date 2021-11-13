@@ -1,0 +1,36 @@
+<div class=container>
+  <div class="wrapper">
+
+    <div class="dropdown" style="float: right; margin-right: 2.5%;" >
+      <img class="img" src="assets/circleprofile.png" width="40" height="40" style="margin-right: -30px;margin-top: -10px;">
+
+      <div class="dropdown-content">
+        <a href="/" onclick="return false;"><img src="assets/edit1.png" width="20" height="20"> Edit</a>
+        <a href="/" onclick="return false;"><img src="assets/settings.png" width="20" height="20"> Settings</a>
+        <a (click)="logout()"><img src="assets/logout.png" width="20" height="20"  margin-top="-5px" margin-right=" -20px">  Logout</a>
+      </div>
+    </div>
+    <div class="text-center">
+      <h2> <b>Vendor Dashboard</b></h2>
+    </div>
+    
+    <table class="table">
+        <tr>
+          <th>Request_ID</th>
+          <th>Employee ID</th>
+          <th>Furniture Requested</th>
+          <th>IT Equipment Requested</th>
+          <th>Delivery Date</th>
+        </tr>
+      <tbody>
+              <tr *ngFor="let d of v">
+                
+                <td class="pointer"><a (click)="updateDeliveryDate(d.req_id)">{{d.req_id}}</a></td>
+                <td>{{d.emp_id}}</td>
+                <td>{{d.furniture}}</td>
+                <td>{{d.it_equip}}</td>
+                <td><a (click)="updateDeliveryDate(d.req_id)">{{d.delivery_date}}</a></td>
+
+        </table>
+    </div>
+</div>

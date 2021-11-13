@@ -1,0 +1,115 @@
+.container
+{
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 3%;
+}
+.wrapper
+{
+  max-width: 200%;
+  padding: 30px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  background-color:white;
+border-radius: 25px;
+}
+.form
+{ 
+    border: none;
+    background-color: white;
+    width: 7%;
+    text-align: center;
+}
+.form1
+{ 
+    border: none;
+    background-color: white;
+    width: 18%;
+    text-align: center;
+}
+.form2
+{ 
+    border: none;
+    background-color: white;
+    width: 8%;
+    text-align: center;
+}
+.form3
+{ 
+    border: none;
+    background-color: white;
+    width: 33%;
+    text-align: center;
+}
+.form4
+{ 
+    border: none;
+    background-color: white;
+}
+.imgresize
+{
+  height: 29px;
+  width:29px;
+  margin-left: 40px;
+}
+
+
+.content{
+    margin: 5%;
+    background-color: #fff;
+    padding: 3rem 2rem 3rem 3rem;
+    box-shadow: 0 0 5px 5px rgba(0,0,0, .05);
+}
+th
+{
+    padding: 1rem 1rem;
+    font-size: 0.8rem;
+}
+.btn{
+    color: #fff;
+    border: none;
+    background:#563aaa;
+    cursor: pointer;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 
+        0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 25px;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-radius: 25px;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #f1f1f1
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+  }
+  .editicon{
+    padding-left: 30px;
+    padding-top: 20px;
+   padding-bottom: 20px;
+    cursor: pointer;
+  }

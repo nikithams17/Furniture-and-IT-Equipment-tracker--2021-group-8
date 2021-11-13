@@ -1,0 +1,90 @@
+<!-- <div class=container>
+  <div class="wrapper">
+    <input type="button" class="btn btn-success" value="Back" onclick="history.back(-1)" />
+    <div class="text-center">
+      <h2> <b>Placed Requests</b></h2>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>Request Id</th>
+          <th>Status</th>
+          <th>Employee Id</th>
+          <th>Furniture</th>
+          <th>IT Equipment</th>
+          <th>Shipping Address</th>
+          <th>Email</th>
+
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let d of data">
+          <td>{{d.req_id}}</td>
+          <td *ngIf="d.status===0 && d.rejectstatus===0"> Unknown</td>
+          <td *ngIf="d.status===1"> Accepted</td>
+          <td *ngIf="d.rejectstatus===1"> Rejected</td>
+          <td>{{d.emp_id}}</td>
+
+          <td>{{d.furniture}}</td>
+          <td>{{d.it_equip}}</td>
+          <td>{{d.shipping_add}}</td>
+          <td>{{d.email}}</td>
+
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div> -->
+
+  <div class=container>
+    <div class="wrapper">
+    
+      <!-- <input type="button" class="btn btn-success" value="Back" onclick="history.back(-1)" />&nbsp; -->
+        <!-- <input type="button" class="btn btn-success" value="Create" (click)="create()"/> -->
+
+        
+        <div class="dropdown" style="float: right; margin-right: 2.5%;" >
+          <img class="img" src="assets/circleprofile.png" width="40" height="40" style="margin-right: -30px;margin-top: -10px;">
+    
+          <div class="dropdown-content">
+            <a (click)="create()"><img src="assets/add.png" width="30" height="30">  Request</a>
+            <a (click)="profile()"href="/" onclick="return false;"><img src="assets/edit1.png" width="20" height="20" > Profile</a>
+            <a href="/" onclick="return false;"><img src="assets/settings.png" width="20" height="20"> Settings</a>
+            <a (click)="logout()"><img src="assets/logout.png" width="20" height="20"  margin-top="-5px" margin-right=" -20px">  Logout</a>
+          </div>
+        </div>
+      
+      <div class="text-center">
+        <h2> <b>Placed Requests</b></h2>
+      </div>
+
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Request Id</th>
+            <th>Status</th>
+            <!-- <th>Employee Id </th> -->
+            <th>Furnitire</th>
+            <th>IT Equipment</th>
+            <th>Address</th>
+            <!-- <th>Email</th> -->
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let d of data">
+            <td>{{d.req_id}}</td>
+            <td *ngIf="d.status===0 && d.rejectstatus===0">Pending...</td>
+            <td *ngIf="d.status===1"> Accepted</td>
+            <td *ngIf="d.rejectstatus===1"> Rejected</td>
+            <!-- <td>{{d.emp_id}}</td> -->
+            <td>{{d.furniture}}</td>
+            <td>{{d.it_equip}}</td>
+            <td>{{d.shipping_add}}</td>
+            <!-- <td>{{d.email}}</td> -->
+          </tr>
+        </tbody>
+      </table>
+      
+    </div>
+  
+  </div>
